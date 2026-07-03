@@ -1,29 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduCraft | Projects, Notes & Study Materials</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduCraft | Projects, Notes & Study Materials</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+}
+
+nav{
+background:#1673ff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:34px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav li{
+margin-left:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(135deg,#1673ff,#6d3df7);
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:30px;
+}
+
+.hero p{
+font-size:24px;
+max-width:900px;
+margin:auto;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+margin:20px 10px;
+padding:18px 45px;
+background:#ffb300;
+color:black;
+font-size:22px;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:90px 10%;
+text-align:center;
+}
+
+section h2{
+font-size:45px;
+color:#1673ff;
+}
+
+.card{
+background:#f3f3f3;
+padding:25px;
+margin:20px;
+border-radius:15px;
+display:inline-block;
+width:260px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+vertical-align:top;
+}
+
+.card h3{
+color:#1673ff;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+</style>
+
 </head>
 
 <body>
 
 <nav>
-    <h2>🎓 EduCraft</h2>
 
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+<div class="logo">🎓 EduCraft</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
 
-
-<header class="hero">
+<header class="hero" id="home">
 
 <h1>📚 Welcome to EduCraft</h1>
 
@@ -34,117 +155,133 @@ Making school work easier with professionally designed projects,
 beautiful notes, creative presentations and quality study materials.
 </p>
 
-<a href="https://wa.me/917633802237?text=Hello%20EduCraft!%20I%20want%20to%20order%20a%20school%20project." target="_blank">
-    <button class="order-btn">Order Now</button>
+<a class="btn"
+href="https://wa.me/917633802237?text=Hello%20EduCraft!%20I%20want%20to%20order%20a%20school%20project."
+target="_blank">
+
+📱 Order Now
+
 </a>
 
-<button>View Services</button>
+<a class="btn" href="#services">
+
+📖 View Services
+
+</a>
 
 </header>
 
+<section id="services">
 
-<section>
+<h2>✨ Our Services</h2>
 
-<h1>✨ Our Services</h1>
+<div class="card">
+<h3>📚 School Projects</h3>
+<p>Beautiful handwritten & digital projects for ICSE and CBSE students.</p>
+</div>
 
-<h3>📖 School Projects</h3>
+<div class="card">
+<h3>📝 Notes</h3>
+<p>Easy-to-understand chapter notes for all subjects.</p>
+</div>
+
+<div class="card">
+<h3>📄 PDFs</h3>
+<p>Printable study materials prepared by experts.</p>
+</div>
+
+<div class="card">
+<h3>🧠 MCQs</h3>
+<p>Important questions with answers for board exams.</p>
+</div>
+
+</section>
+
+<section id="pricing">
+
+<h2>💰 Pricing</h2>
+
+<div class="card">
+<h3>Basic Notes</h3>
+<h1>₹49</h1>
+<p>PDF Notes</p>
+</div>
+
+<div class="card">
+<h3>School Project</h3>
+<h1>₹299</h1>
+<p>Professional Project File</p>
+</div>
+
+<div class="card">
+<h3>Premium Package</h3>
+<h1>₹599</h1>
+<p>Project + Notes + MCQs</p>
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2>🎨 Portfolio</h2>
 
 <p>
-Beautiful handwritten and digital projects for ICSE & CBSE students.
-</p>
 
-<h3>📝 Revision Notes</h3>
+✔ English Projects<br><br>
 
-<p>
-Easy-to-understand chapter-wise notes prepared for quick revision.
-</p>
+✔ Geography Projects<br><br>
 
-<h3>📚 MCQs & Question Banks</h3>
+✔ Mathematics Projects<br><br>
 
-<p>
-Important questions with answers for exam preparation.
-</p>
+✔ Hindi Projects<br><br>
 
-<h3>🎨 Front Pages</h3>
+✔ Biology Notes<br><br>
 
-<p>
-Creative cover pages and project designs.
-</p>
+✔ MCQs & Sample Papers
 
-<h3>💻 PowerPoint Presentations</h3>
-
-<p>
-Professional presentations for school assignments.
 </p>
 
 </section>
 
+<section id="contact">
 
+<h2>📞 Contact Us</h2>
 
-<section>
+<h3>WhatsApp</h3>
 
-<h1>⭐ Why Choose EduCraft?</h1>
+<p>
 
-<p>✔ High Quality Content</p>
+7633802237
 
-<p>✔ Affordable Prices</p>
+</p>
 
-<p>✔ Fast Delivery</p>
+<a class="btn"
+href="https://wa.me/917633802237?text=Hello%20EduCraft!%20I%20want%20to%20order%20a%20school%20project."
+target="_blank">
 
-<p>✔ Attractive Designs</p>
+Chat on WhatsApp
 
-<p>✔ Original Work</p>
-
-<p>✔ Friendly Support</p>
-
-</section>
-
-
-
-<section>
-
-<h1>💰 Starting Prices</h1>
-
-<p>📖 Acknowledgement - ₹30</p>
-
-<p>📚 Introduction - ₹40</p>
-
-<p>📝 Notes - ₹100</p>
-
-<p>📄 Complete Project - ₹250+</p>
-
-<p>🎨 Front Page - ₹50</p>
+</a>
 
 </section>
-
-
-
-<section>
-
-<h1>📞 Contact Us</h1>
-
-<p>Email : yourname@gmail.com</p>
-
-<p>Contact : +91 7633802286</p>
-<p>Whatsapp: +91 7633802237</p>
-<button>Chat on WhatsApp</button>
-
-</section>
-
-
 
 <footer>
 
-<h3>© 2026 EduCraft</h3>
+<h2>EduCraft</h2>
 
 <p>
-Helping students learn smarter every day.
+
+Empowering Students with Smart Learning Solutions.
+
+</p>
+
+<p>
+
+© 2026 EduCraft. All Rights Reserved.
+
 </p>
 
 </footer>
-
-
-<script src="script.js"></script>
 
 </body>
 </html>
